@@ -16,7 +16,7 @@ if (!require("RColorBrewer")) {
 ### B) Reading in data and transform it into matrix format
 #########################################################
 
-data <- read.csv("data.csv", comment.char="#")
+data <- read.csv("data file name.csv", comment.char="#")
 rnames <- data[,1]                            # assign labels in column 1 to "rnames"
 mat_data <- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
 rownames(mat_data) <- rnames                  # assign row names 
